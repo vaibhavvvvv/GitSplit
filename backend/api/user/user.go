@@ -34,7 +34,7 @@ func AssignWalletToUsername(c *gin.Context) {
 		return
 	}
 
-	nodeUrl := os.Getenv("POLYGON_MUMBAI_RPC_HTTP")
+	nodeUrl := os.Getenv("POLYGON_AMOY_RPC_HTTP")
 	client, err := ethclient.Dial(nodeUrl)
 	if err != nil {
 		logrus.Errorf("failed to dial client at url %v, error: %v", nodeUrl, err.Error())
