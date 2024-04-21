@@ -77,7 +77,7 @@ func AssignWalletToUsername(c *gin.Context) {
 		})
 	}
 
-	auth, err := bind.NewKeyedTransactorWithChainID(privateKey, big.NewInt(80001))
+	auth, err := bind.NewKeyedTransactorWithChainID(privateKey, big.NewInt(80002))
 	if err != nil {
 		logrus.Errorf("cannot get TransactOpts")
 		c.JSON(http.StatusInternalServerError, gin.H{
